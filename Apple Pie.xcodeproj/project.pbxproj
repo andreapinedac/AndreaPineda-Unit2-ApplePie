@@ -14,6 +14,7 @@
 		315012C21FB3B0CB00EB8C00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 315012C01FB3B0CB00EB8C00 /* LaunchScreen.storyboard */; };
 		315012CD1FB3B0CB00EB8C00 /* Apple_PieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315012CC1FB3B0CB00EB8C00 /* Apple_PieTests.swift */; };
 		315012D81FB3B0CB00EB8C00 /* Apple_PieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315012D71FB3B0CB00EB8C00 /* Apple_PieUITests.swift */; };
+		315012E61FB3B94E00EB8C00 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315012E51FB3B94E00EB8C00 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		315012D31FB3B0CB00EB8C00 /* Apple PieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apple PieUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		315012D71FB3B0CB00EB8C00 /* Apple_PieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_PieUITests.swift; sourceTree = "<group>"; };
 		315012D91FB3B0CB00EB8C00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		315012E51FB3B94E00EB8C00 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				315012B71FB3B0CB00EB8C00 /* AppDelegate.swift */,
 				315012B91FB3B0CB00EB8C00 /* ViewController.swift */,
 				315012BB1FB3B0CB00EB8C00 /* Main.storyboard */,
+				315012E51FB3B94E00EB8C00 /* Game.swift */,
 				315012BE1FB3B0CB00EB8C00 /* Assets.xcassets */,
 				315012C01FB3B0CB00EB8C00 /* LaunchScreen.storyboard */,
 				315012C31FB3B0CB00EB8C00 /* Info.plist */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				315012BA1FB3B0CB00EB8C00 /* ViewController.swift in Sources */,
+				315012E61FB3B94E00EB8C00 /* Game.swift in Sources */,
 				315012B81FB3B0CB00EB8C00 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
