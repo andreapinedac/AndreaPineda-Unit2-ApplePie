@@ -11,19 +11,9 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet var letterButtons: [UIButton]!
-    @IBAction func buttonTapped(_ sender: UIButton) {
-        sender.isEnabled = false
-        let letterString = sender.title(for: .normal)!
-        let letter = Character(letterString.lowercased())
-        currentGame.playerGuessed(letter: letter)
-        updateGameState()
-    }
-
- 
-    }
+    @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var treeImageView: UIImageView!
     @IBOutlet weak var correctWordLabel: UILabel!
-    @IBOutlet weak var scoreLabel: UILabel!
     
     var listOfWords = ["andrea", "lulu", "koekje", "hahaha", "eten", "cake"]
     let incorrectMovesAllowed = 7
@@ -71,16 +61,26 @@ class ViewController: UIViewController {
             button.isEnabled = enable
         }
     }
-
     
-    func updateUI() {
-        var letters = [String]()
-        for letter in currentGame.formattedWord.characters {
-            letters.append(String(letter))
-        }
-        let wordWithSpacing = letters.joined(separator: " ")
-        correctWordLabel.text = wordWithSpacing
-        scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
-        treeImageView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
+    
+    @IBAction private func buttonTapped(_ sender: UIButton) {
+        sender.isEnabled = false
+        let letterString = sender.title(for: .normal)!
+        let letter = Character(letterString.lowercased())
+        currentGame.playerGuessed(letter: letter)
+        updateGameState()
+        
     }
-}
+        
+        func updateUI() {
+            var letters = [String]()
+            for letter in currentGame.formattedWord.characters {
+                letters.append(String(letter))
+            }
+            let wordWithSpacing = letters.joined(separator: " ")
+            correctWordLabel.text = wordWithSpacing
+            scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
+            treeImageView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
+        }
+    }
+

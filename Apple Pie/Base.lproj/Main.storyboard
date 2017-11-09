@@ -34,7 +34,6 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="205" height="44"/>
                                                         <state key="normal" title="A"/>
                                                         <connections>
-                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sfe-HS-kEh"/>
                                                             <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JNK-g5-uQR"/>
                                                         </connections>
                                                     </button>
@@ -276,9 +275,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="correctWordLabel" destination="AlG-ZQ-r70" id="Cuj-ul-udJ"/>
-                        <outlet property="scoreLabel" destination="TvL-Tq-6wQ" id="BzD-1t-CsR"/>
-                        <outlet property="treeImageView" destination="c8G-Mc-nko" id="FaM-VP-Mbh"/>
+                        <outlet property="correctWordLabel" destination="AlG-ZQ-r70" id="OM6-Rt-sRU"/>
+                        <outlet property="scoreLabel" destination="TvL-Tq-6wQ" id="fh3-dL-AUB"/>
+                        <outlet property="treeImageView" destination="c8G-Mc-nko" id="jYI-ne-x7z"/>
                         <outletCollection property="letterButtons" destination="gii-cJ-Cdr" collectionClass="NSMutableArray" id="bv1-XW-BJ1"/>
                         <outletCollection property="letterButtons" destination="q8q-ti-tII" collectionClass="NSMutableArray" id="WXb-VW-tqg"/>
                         <outletCollection property="letterButtons" destination="sVK-d0-dZf" collectionClass="NSMutableArray" id="VeF-GZ-HIr"/>
